@@ -1,0 +1,46 @@
+.footer-bottom
+{
+	padding: 1*$lh 0;
+
+	&__inner
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__copyright
+	{
+		color: $gray;
+		font-size: 11px;
+		line-height: .5*$lh;
+		margin-bottom: 1*$lh;
+
+		a:hover
+		{
+			opacity: .8;
+		}
+	}
+
+	&__afip
+	{
+		text-align: center;
+	}
+}
+
+@include m
+{
+	.footer-bottom
+	{
+		&__inner
+		{
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&__copyright
+		{
+			margin-bottom: 0;
+		}
+	}
+}

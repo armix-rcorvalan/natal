@@ -1,0 +1,37 @@
+.banner-club-natal
+{
+	margin: 1.25*$lh 0;
+
+	&__banner
+	{
+		background-image: url('../images/banner-club-natal.png');
+		background-position: center;
+		background-size: auto 100%;
+		border-radius: 10px;
+		display: flex;
+		height: 12*$lh;
+		justify-content: center;
+		padding-top: 1*$lh;
+	}
+
+	&__logo
+	{
+		display: block;
+		height: 2*$lh;
+		width: auto;
+	}
+}
+
+@include l
+{
+	.banner-club-natal
+	{
+		margin: 2.5*$lh 0;
+
+		&__banner
+		{
+			border-radius: 55px;
+			height: 10*$lh;
+		}
+	}
+}

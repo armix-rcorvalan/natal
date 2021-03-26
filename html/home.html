@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <title>Farmacias Natal</title>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+   </head>
+   <body>
+      <header class="header">
+         <div class="header-top header__top">
+            <div class="header-top__inner global-inner">
+               <h1 class="logo header-top__logo">
+                  <a href="#" class="logo__link">
+                  <img src="//localhost/natal//images/logo.svg" class="logo__image">
+                  </a>
+               </h1>
+               <h1 class="iso header-top__iso">
+                  <a href="#" class="iso__link">
+                  <img src="//localhost/natal//images/iso.svg" class="iso__image">
+                  </a>
+               </h1>
+               <form action="" class="search-form header-top__search-form">
+                  <div class="search-form__wrapper">
+                     <input type="search" class="search-form__input" placeholder="¿Qué estás buscando?" />
+                     <button type="submit" class="search-form__submit">
+                     <img src="//localhost/natal//images/icon-search.svg" class="search-form__icon-search">
+                     </button>
+                  </div>
+               </form>
+               <div class="header-top__button-prescription">
+                  <a href="#" class="header-top__button button">Recetas</a>
+               </div>
+               <div class="header-top__button-store">
+                  <a href="#" class="header-top__button button">Tienda Online</a>
+               </div>
+               <a href="#" class="cart-icon  header-top__cart-icon">
+               <img src="//localhost/natal//images/icon-cart.svg" class="cart-icon__icon">
+               </a>
+               <a href="#" class="menu-icon header-top__menu-icon">
+               <img src="//localhost/natal//images/icon-menu.svg" class="menu-icon__icon">
+               </a>
+            </div>
+         </div>
+         <div class="header-bottom header__bottom">
+            <div class="header-bottom__inner global-inner">
+               <a href="#" class="categories-icon  header-bottom__categories-icon">
+               <img src="//localhost/natal//images/icon-menu-yellow.svg" class="categories-icon__icon">
+               <span class="categories-icon__text">Categorías</span>
+               </a>
+               <nav class="menu-categories menu header-bottom__menu-categories">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">Item 1</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">Item 2</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">Item 3</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">Item 4</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">Item 5</a>
+                     </li>
+                  </ul>
+               </nav>
+               <nav class="menu-fast header-bottom__menu-fast">
+                  <ul class="menu-fast__list">
+                     <li class="menu-fast__item">
+                        <a href="#" class="menu-fast__link">Item 1</a>
+                     </li>
+                     <li class="menu-fast__item">
+                        <a href="#" class="menu-fast__link">Item 2</a>
+                     </li>
+                     <li class="menu-fast__item">
+                        <a href="#" class="menu-fast__link">Item 3</a>
+                     </li>
+                     <li class="menu-fast__item">
+                        <a href="#" class="menu-fast__link">Item 4</a>
+                     </li>
+                     <li class="menu-fast__item">
+                        <a href="#" class="menu-fast__link">Item 5</a>
+                     </li>
+                  </ul>
+               </nav>
+               <a href="#" class="club-icon-text  header-bottom__club-icon-text">
+               <img src="//localhost/natal//images/icon-club.svg" class="club-icon-text__icon">
+               <span class="club-icon-text__text">Mi Club Natal</span>
+               </a>
+               <a href="#" class="cart-icon-text  header-bottom__cart-icon-text">
+               <img src="//localhost/natal//images/icon-cart-white.svg" class="cart-icon-text__icon">
+               <span class="cart-icon-text__text">Carrito</span>
+               </a>
+            </div>
+         </div>
+         <nav class="menu-mobile menu header__menu-mobile">
+            <ul class="menu__list">
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 1</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 2</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 3</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 4</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 5</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 6</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 7</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 8</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Item 9</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div class="home-slider">
+         <div class="home-slider__slide">
+            <picture class="home-slider__picture">
+               <source srcset="images/home-slider-l.jpg" media="(min-width: 1280px)">
+               <source srcset="images/home-slider-m.jpg" media="(min-width: 640px)">
+               <img src="images/home-slider-s.jpg" class="home-slider__image" />
+            </picture>
+         </div>
+         <div class="home-slider__slide">
+            <picture class="home-slider__picture">
+               <source srcset="images/home-slider-l.jpg" media="(min-width: 1280px)">
+               <source srcset="images/home-slider-m.jpg" media="(min-width: 640px)">
+               <img src="images/home-slider-s.jpg" class="home-slider__image" />
+            </picture>
+         </div>
+         <div class="home-slider__slide">
+            <picture class="home-slider__picture">
+               <source srcset="images/home-slider-l.jpg" media="(min-width: 1280px)">
+               <source srcset="images/home-slider-m.jpg" media="(min-width: 640px)">
+               <img src="images/home-slider-s.jpg" class="home-slider__image" />
+            </picture>
+         </div>
+      </div>
+      <div class="shortcuts shortcuts--count-2">
+         <div class="shortcuts__inner global-inner">
+            <a href="#" class="shortcuts-item shortcuts__item shortcuts-item--style-1">
+               <img src="//localhost/natal//images/icon-recetas.svg" class="shortcuts-item__icon">
+               <span class="shortcuts-item__text-content">
+                  <h3 class="shortcuts-item__title">Recetas</h3>
+                  <p class="shortcuts-item__content">Cotizá tus recetas con nosotros. Explicado paso a paso.</p>
+               </span>
+            </a>
+            <a href="#" class="shortcuts-item shortcuts__item shortcuts-item--style-1">
+               <img src="//localhost/natal//images/icon-cat.svg" class="shortcuts-item__icon">
+               <span class="shortcuts-item__text-content">
+                  <h3 class="shortcuts-item__title">Categorías</h3>
+                  <p class="shortcuts-item__content">Buscá nuestros productos por categoría.</p>
+               </span>
+            </a>
+         </div>
+      </div>
+      <div class="products-list">
+         <div class="products-list__inner global-inner">
+            <div class="products-list-heading products-list__heading">
+               <h3 class="products-list-heading__title">Ofertas</h3>
+               <a href="#" class="products-list-heading__more">
+               <span class="products-list-heading__more-text">ver todas</span>
+               <img src="//localhost/natal//images/icon-arrow-right.svg" class="products-list-heading__more-icon">
+               </a>
+            </div>
+            <div class="products-list__grid">
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge products-item__badge--red">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers Confort Sec Mediano 8 unidades mas contenido</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge ">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers Confort</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge ">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+            </div>
+            <div class="products-list__button-wrapper">
+               <a href="#" class="products-list__button button button--large">Ver más ofertas</a>
+            </div>
+         </div>
+      </div>
+      <div class="banner-club-natal">
+         <div class="banner-club-natal__inner global-inner">
+            <a href="#" class="banner-club-natal__banner">
+            <img src="//localhost/natal//images/logo-club-natal.png" class="banner-club-natal__logo">
+            </a>
+         </div>
+      </div>
+      <div class="shortcuts shortcuts--count-3">
+         <div class="shortcuts__inner global-inner">
+            <a href="#" class="shortcuts-item shortcuts__item shortcuts-item--style-2">
+               <img src="//localhost/natal//images/icon-bebe.svg" class="shortcuts-item__icon">
+               <span class="shortcuts-item__text-content">
+                  <h3 class="shortcuts-item__title">Bebé</h3>
+               </span>
+            </a>
+            <a href="#" class="shortcuts-item shortcuts__item shortcuts-item--style-2">
+               <img src="//localhost/natal//images/icon-maquillaje.svg" class="shortcuts-item__icon">
+               <span class="shortcuts-item__text-content">
+                  <h3 class="shortcuts-item__title">Maquillaje</h3>
+               </span>
+            </a>
+            <a href="#" class="shortcuts-item shortcuts__item shortcuts-item--style-2">
+               <img src="//localhost/natal//images/icon-cuidado.svg" class="shortcuts-item__icon">
+               <span class="shortcuts-item__text-content">
+                  <h3 class="shortcuts-item__title">Cuidado Personal</h3>
+               </span>
+            </a>
+         </div>
+      </div>
+      <div class="products-list">
+         <div class="products-list__inner global-inner">
+            <div class="products-list-heading products-list__heading">
+               <h3 class="products-list-heading__title">Destacados</h3>
+               <a href="#" class="products-list-heading__more">
+               <span class="products-list-heading__more-text">ver todas</span>
+               <img src="//localhost/natal//images/icon-arrow-right.svg" class="products-list-heading__more-icon">
+               </a>
+            </div>
+            <div class="products-list__grid">
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge products-item__badge--red">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers Confort Sec Mediano 8 unidades mas contenido</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge ">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers Confort</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge ">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge products-item__badge--red">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers Confort Sec Mediano 8 unidades mas contenido</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge ">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers Confort</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  <span class="products-item__badge ">-30%</span>
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+               <a href="#" class="products-item ">
+                  <span class="products-item__top">
+                  <img src="//localhost/natal//images/products-example.png" class="products-item__image" />
+                  </span>
+                  <span class="products-item__middle">
+                     <h4 class="products-item__title">Pañales Pampers</h4>
+                  </span>
+                  <span class="products-item__bottom">
+                  <span class="products-item__price">
+                  <span class="products-item__price-offer">$2.500</span>
+                  <span class="products-item__price-regular">$2.750</span>
+                  </span>
+                  </span>
+               </a>
+            </div>
+            <div class="products-list__button-wrapper">
+               <a href="#" class="products-list__button button button--large">Ir a la tienda</a>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="footer-top footer__top">
+            <div class="footer-top__inner global-inner">
+               <h1 class="logo footer-top__logo">
+                  <a href="#" class="logo__link">
+                  <img src="//localhost/natal//images/logo.svg" class="logo__image">
+                  </a>
+               </h1>
+               <div class="footer-contact footer-top__contact">
+                  <h4 class="footer-contact__title">CONTACTO</h4>
+                  <div class="footer-contact__content">
+                     <p><b>Whatsapp:</b> 2615398843</p>
+                     <p><a href="mailto: tiendaonline@farmaciasnatal.com.ar">tiendaonline@farmaciasnatal.com.ar</a></p>
+                     <br>
+                     <p><b>Horario de Atención al Cliente:</b><br>
+                        Lunes a Viernes de 9 a 13 hs. <br>
+                        y de 17 a 21 hs.<br>
+                        Sábados de 9 a 13 hs
+                     </p>
+                  </div>
+               </div>
+               <nav class="menu-footer footer-top__menu">
+                  <ul class="menu-footer__list">
+                     <li class="menu-footer__item">
+                        <a href="#" class="menu-footer__link">Contacto</a>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a href="#" class="menu-footer__link">Información</a>
+                        <ul class="menu-footer__list">
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Contacto</a>
+                           </li>
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Sucursales</a>
+                           </li>
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Club Natal</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a href="#" class="menu-footer__link">Mi Cuenta</a>
+                        <ul class="menu-footer__list">
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Mi Club Natal</a>
+                           </li>
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Mi carrito</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="menu-footer__item">
+                        <a href="#" class="menu-footer__link">Ayuda</a>
+                        <ul class="menu-footer__list">
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Cómo comprar</a>
+                           </li>
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Medios de pago</a>
+                           </li>
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Métodos de envío</a>
+                           </li>
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Términos y condiciones</a>
+                           </li>
+                           <li class="menu-footer__item">
+                              <a href="#" class="menu-footer__link">Defensa al consumidor</a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="footer-bottom footer__bottom">
+            <div class="footer-bottom__inner global-inner">
+               <div class="footer-bottom__copyright">
+                  <p>Copyright © 2019 Farmacias Natal - Todos los derechos reservados | <a href="#">Términos y Condiciones</a> | <a href="#">Políticas de privacidad</a></p>
+               </div>
+               <div class="footer-bottom__afip">
+                  <img src="images/qr.png" class="footer-bottom__afip-image" />
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script src="javascripts/header.js"></script>
+      <script src="javascripts/home-slider.js"></script>
+   </body>
+</html>
+

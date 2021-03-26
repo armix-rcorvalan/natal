@@ -1,0 +1,41 @@
+.footer-contact
+{
+
+	&__title
+	{
+		display: none;
+	}
+
+	&__content
+	{
+		color: $gray;
+		font-size: 13px;
+		line-height: .75*$lh;
+
+		a:hover
+		{
+			opacity: .8;
+		}
+	}
+}
+
+@include l
+{
+	.footer-contact
+	{
+		&__title
+		{
+			color: $sapphire;
+			display: block;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			margin-bottom: .5*$lh;
+		}
+
+		&__content
+		{
+			
+		}
+	}
+}

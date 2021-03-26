@@ -1,0 +1,33 @@
+.menu
+{
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .15);
+	text-align: center;
+
+	&__list
+	{
+		background: $white;
+		padding: .25*$lh 0;
+	}
+
+	&__link
+	{
+		border-bottom: 1px solid $alabaster;
+		display: block;
+		font-size: 16px;
+		font-weight: 500;
+		height: 1.5*$lh;
+		line-height: 1.5*$lh;
+		padding: 0 .5*$lh;
+		width: 100%;
+
+		&:hover
+		{
+			background-color: $alabaster;
+		}
+	}
+
+	&__item:last-child &__link
+	{
+		border: 0;
+	}
+}

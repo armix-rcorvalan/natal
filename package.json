@@ -1,0 +1,25 @@
+{
+  "name": "armix",
+  "version": "1.0.0",
+  "description": "theme base",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rodcorvalan/bespoke.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ARMIX Agency",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-iconfont": "*",
+    "gulp-iconfont-css": "*",
+    "gulp-pleeease": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "ip": "*"
+  }
+}

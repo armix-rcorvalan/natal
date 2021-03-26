@@ -1,0 +1,77 @@
+// sass-lint:disable no-vendor-prefixes
+
+// Form Reset
+
+input,
+label,
+select,
+button,
+textarea
+{
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	display: inline-block;
+	font-family:  inherit;
+	font-size:  inherit;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	white-space: normal;
+}
+
+
+input:focus
+{
+	outline: 0;
+}
+
+
+::-webkit-search-decoration
+{
+	display: none;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]
+{
+	overflow: visible;
+	width: auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button
+{	
+	padding:0;
+	border:0;
+	background:none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+textarea 
+{
+	/* Move the label to the top */
+	vertical-align:top;
+	
+	/* Turn off scroll bars in IE unless needed */
+	overflow:auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select
+{
+
+}
+
+select[multiple] 
+{
+	/* Move the label to the top */
+	vertical-align:top;
+}

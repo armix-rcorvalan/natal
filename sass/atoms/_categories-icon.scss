@@ -1,0 +1,27 @@
+.categories-icon
+{
+	align-items: center;
+	display: flex;
+	height: 14px;
+	padding-right: 1*$lh;
+
+	&__icon
+	{
+		display: block;
+		height: inherit;
+	}
+
+	&__text
+	{
+		color: $candlelight;
+		display: block;
+		font-size: 14px;
+		font-weight: 500;
+		margin-left: 15px;
+	}
+
+	&:hover
+	{
+		opacity: .8;
+	}
+}

@@ -1,0 +1,26 @@
+.button
+{
+	background-color: $sapphire;
+	border-radius: 8px;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	height: 1.25*$lh;
+	line-height: 1.25*$lh;
+	padding: 0 .75*$lh;
+	text-align: center;
+
+	&:hover
+	{
+		background-color: lighten($sapphire, 10%);
+	}
+}
+
+.button.button--large
+{
+	height: 1.75*$lh;
+	line-height: 1.75*$lh;
+	padding: 0 1*$lh;
+}

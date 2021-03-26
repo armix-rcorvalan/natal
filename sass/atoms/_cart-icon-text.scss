@@ -1,0 +1,23 @@
+.cart-icon-text
+{
+	align-items: center;
+	display: flex;
+	height: 20px;
+
+	&:hover
+	{
+		opacity: .8;
+	}
+
+	&__icon
+	{
+		display: block;
+		height: inherit;
+	}
+
+	&__text
+	{
+		font-size: 14px;
+		margin-left: 8px;
+	}
+}

@@ -1,0 +1,90 @@
+.header-top
+{
+	background-color: $candlelight;
+	height: 2*$lh;
+
+	&__inner
+	{
+		align-items: center;
+		display: grid;
+		grid-column-gap: .75*$lh;
+		grid-template-columns: auto minmax(0, 1fr) auto auto;
+		height: inherit;
+		width: calc(100% - 26px);
+	}
+
+	&__iso
+	{
+		height: 1*$lh;
+	}
+
+	&__logo,
+	&__button-prescription,
+	&__button-store
+	{
+		display: none;
+	}
+}
+
+@include m
+{
+	.header-top
+	{
+		&__logo
+		{
+			display: block;
+			height: 1*$lh;
+		}
+
+		&__iso
+		{
+			display: none;
+		}
+	}
+}
+
+@include l
+{
+	.header-top
+	{
+		height: 3*$lh;
+
+		&__inner
+		{
+			width: 960px;
+		}
+
+		&__logo
+		{
+			height: 1.25*$lh;
+		}
+
+		&__button-prescription,
+		&__button-store,
+		{
+			display: block;
+		}
+
+		&__search-form
+		{
+			margin: 0 .25*$lh;
+		}
+
+		&__cart-icon,
+		&__menu-icon
+		{
+			display: none;
+		}
+	}
+}
+
+@include xl
+{
+	.header-top
+	{
+		&__inner
+		{
+			width: 1280px;
+		}
+	}
+}

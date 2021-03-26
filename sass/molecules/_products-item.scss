@@ -1,0 +1,137 @@
+.products-item
+{
+	background: $white;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	transition: .1s box-shadow;
+
+	&:hover
+	{
+		box-shadow: 0 8px 10px rgba(0, 0, 0, .14), 0 3px 14px rgba(0, 0, 0, .12), 0 5px 5px rgba(0, 0, 0, .2);
+	}
+
+	&__top
+	{
+		border-bottom: 1px solid $alto;
+		display: block;
+		padding: .25*$lh;
+		position: relative;
+	}
+
+	&__badge
+	{
+		background-color: $candlelight;
+		border-radius: 100px;
+		color: $white;
+		font-size: 14px;
+		font-weight: 700;
+		height: 1*$lh;
+		left: .5*$lh;
+		line-height: 1*$lh;
+		padding: 0 .5*$lh;
+		position: absolute;
+		top: .5*$lh;
+		z-index: 2;
+	}
+
+	&__badge--red
+	{
+		background-color: $crimson;
+	}
+
+	&__image
+	{
+		display: block;
+		height: 6*$lh;
+		object-fit: contain;
+		width: 100%;
+	}
+
+	&__middle
+	{
+		display: block;
+		height: 100%;
+		padding: .5*$lh;
+	}
+
+	&__title
+	{
+		color: $gray;
+		display: block;
+		font-size: 13px;
+		line-height: .75*$lh;
+		overflow: hidden;
+	}
+
+	&__bottom
+	{
+		display: block;
+		padding: 0 .5*$lh .5*$lh;
+	}
+
+	&__price
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	&__price-regular
+	{
+		color: $gray;
+		font-size: 14px;
+		text-decoration: line-through;
+	}
+
+	&__price-offer
+	{
+		color: $sapphire;
+		font-size: 24px;
+		font-weight: 500;
+	}
+}
+
+@include l
+{
+	.products-item
+	{
+		border-radius: 20px;
+
+		&__top
+		{
+			padding: .75*$lh;
+		}
+
+		&__badge
+		{
+			left: .75*$lh;
+			top: .75*$lh;
+		}
+
+		&__middle
+		{
+			padding: .75*$lh;
+		}
+
+		&__title
+		{
+			font-size: 14px;
+		}
+
+		&__bottom
+		{
+			padding: .5*$lh .75*$lh 1*$lh;
+		}
+
+		&__price
+		{
+			align-items: center;
+			flex-direction: row;
+
+			> *:nth-child(2)
+			{
+				margin-left: 16px;
+			}
+		}
+	}
+}

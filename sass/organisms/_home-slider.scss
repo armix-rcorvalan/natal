@@ -1,0 +1,54 @@
+.home-slider
+{
+	height: 9*$lh;
+	overflow: hidden;
+	position: relative;
+
+	&__image
+	{
+		display: block;
+		height: 9*$lh;
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+	}
+
+	.slick-dots
+	{
+		bottom: .5*$lh;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+}
+
+@include m
+{
+	.home-slider
+	{
+		height: 12*$lh;
+
+		&__image
+		{
+			height: 12*$lh;
+		}
+
+		.slick-dots
+		{
+			bottom: 1*$lh;
+		}
+	}
+}
+
+@include l
+{
+	.home-slider
+	{
+		height: 14*$lh;
+
+		&__image
+		{
+			height: 14*$lh;
+		}
+	}
+}

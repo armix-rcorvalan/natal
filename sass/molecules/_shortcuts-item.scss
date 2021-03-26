@@ -1,0 +1,127 @@
+.shortcuts-item
+{
+	align-items: center;
+	background-color: $candlelight;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	height: 3.5*$lh;
+	justify-content: center;
+
+	&:hover
+	{
+		background-color: darken($candlelight, 5%);
+	}
+
+	&__icon
+	{
+		display: block;
+		height: 1*$lh;
+		width: auto;
+	}
+
+	&__title
+	{
+		color: $sapphire;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: .75*$lh;
+		margin-top: .25*$lh;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	&__content
+	{
+		display: none;
+	}
+}
+
+@include m
+{
+	.shortcuts-item
+	{
+		border-radius: 20px;
+		height: 5*$lh;
+		padding: 0 1.25*$lh;
+
+		&__title
+		{
+			font-size: 20px;
+			margin-bottom: .25*$lh;
+			margin-top: 0;
+		}
+	}
+
+	.shortcuts-item.shortcuts-item--style-1
+	{
+		flex-direction: row;
+
+		.shortcuts-item__title
+		{
+			text-align: left;
+		}
+
+		.shortcuts-item__content
+		{
+			color: $white;
+			display: block;
+			font-size: 14px;
+			line-height: .75*$lh;
+		}
+
+		.shortcuts-item__icon
+		{
+			height: 1.75*$lh;
+			margin-right: .75*$lh;
+		}
+	}
+
+	.shortcuts-item.shortcuts-item--style-2
+	{
+		.shortcuts-item__icon
+		{
+			height: 1.5*$lh;
+			margin-bottom: .5*$lh;
+		}
+	}
+}
+
+@include l
+{
+	.shortcuts-item
+	{
+		border-radius: 55px;
+		height: 7*$lh;
+		padding: 0 2*$lh;
+
+		.shortcuts-item__title
+		{
+			font-size: 24px;
+			margin-bottom: .5*$lh;
+		}
+	}
+
+	.shortcuts-item.shortcuts-item--style-1
+	{
+		.shortcuts-item__content
+		{
+			font-size: 16px;
+		}
+
+		.shortcuts-item__icon
+		{
+			height: 2.25*$lh;
+			margin-right: 1.25*$lh;
+		}
+	}
+
+	.shortcuts-item.shortcuts-item--style-2
+	{
+		.shortcuts-item__icon
+		{
+			height: 1.75*$lh;
+			margin-bottom: 1*$lh;
+		}
+	}
+}

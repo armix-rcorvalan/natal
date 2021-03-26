@@ -1,0 +1,35 @@
+.header-bottom
+{
+	background-color: $sapphire;
+	color: $white;
+	height: 2*$lh;
+
+	&__inner
+	{
+		align-items: center;
+		display: grid;
+		grid-column-gap: 1.25*$lh;
+		grid-template-columns: auto minmax(0, 1fr) auto auto;
+		height: inherit;
+		position: relative;
+	}
+
+	nav.header-bottom__menu-categories
+	{
+		color: $emperor;
+		display: none;
+		left: -13px;
+		position: absolute;
+		text-align: left;
+		top: 100%;
+		width: 300px;
+	}
+
+	/*
+	nav.header-bottom__menu-categories--active
+	{
+		left: -13px;
+		transform: translateX(0) translateY(0);
+	}
+	*/
+}

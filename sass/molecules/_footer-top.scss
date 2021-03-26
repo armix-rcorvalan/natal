@@ -1,0 +1,65 @@
+.footer-top
+{
+	background: $gallery;
+	padding: 1*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 1*$lh;
+		grid-template-columns: minmax(0, 1fr);
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__logo
+	{
+		height: 1*$lh;
+		order: 1;
+	}
+
+	&__menu
+	{
+		order: 2;
+	}
+
+	&__contact
+	{
+		order: 3;
+	}
+}
+
+@include l
+{
+	.footer-top
+	{
+		padding: 1.5*$lh 0;
+
+		&__inner
+		{
+			align-items: start;
+			grid-column-gap: 3*$lh;
+			grid-row-gap: 1.5*$lh;
+			grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+			text-align: left;
+		}
+
+		&__logo
+		{
+			grid-column: span 4;
+			order: 1;
+			text-align: center;
+		}
+
+		&__contact
+		{
+			order: 2;
+		}
+
+		&__menu
+		{
+			grid-column: span 3;
+			order: 3;
+		}
+	}
+}

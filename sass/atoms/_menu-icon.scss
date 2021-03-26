@@ -1,0 +1,15 @@
+.menu-icon
+{
+	height: 22px;
+
+	&:hover
+	{
+		opacity: .8;
+	}
+
+	&__icon
+	{
+		display: block;
+		height: inherit;
+	}
+}

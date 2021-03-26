@@ -1,0 +1,27 @@
+.menu-fast
+{
+	&__list
+	{
+		display: inline-flex;
+	}
+
+	&__item
+	{
+		font-size: 14px;
+
+		&:not(:first-child)
+		{
+			margin-left: 1*$lh;
+		}
+	}
+
+	&__link
+	{
+		color: $white;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+}

@@ -1,0 +1,122 @@
+@mixin placeholder
+{
+	// sass-lint:disable-block no-vendor-prefixes
+	&::-webkit-input-placeholder
+	{
+		@content;
+	}
+
+	&::-moz-placeholder
+	{
+		@content;
+	}
+
+	&:-ms-input-placeholder
+	{
+		@content;
+	}
+
+	&::-ms-input-placeholder
+	{
+		@content;
+	}
+
+	&:-moz-placeholder
+	{
+		@content;
+	}
+
+	&::placeholder
+	{
+		@content;
+	}
+}
+
+@mixin remove-highlight
+{
+	// sass-lint:disable-block no-vendor-prefixes
+	-webkit-tap-highlight-color: transparent;
+	outline-style: none;
+	user-select: none;
+
+	*
+	{
+		-webkit-tap-highlight-color: transparent;
+		outline-style: none;
+		user-select: none;
+	}
+}
+
+@mixin image-overflow-center($height)
+{
+	display: block;
+	height: $height;
+	overflow: hidden;
+	width: 100%;
+
+	.inner
+	{
+		display: inline-block;
+		height: inherit;
+		position: relative;
+		right: -50%;
+
+		img
+		{
+			height: inherit;
+			left: -50%;
+			position: relative;
+		}
+	}
+}
+
+@mixin section-min-height($margin:true)
+{
+	@if $margin
+	{
+		min-height: calc(100vh - 71.5px - 324px);
+
+		@include m
+		{
+			// 100% - header - header margin - footer - wrapper margins
+			min-height: calc(100vh - 71.5px - 32.5px - 240.5px - (52px * 2));
+		}
+
+		@include l
+		{
+			// 100% - header - header margin - footer - wrapper margins
+			min-height: calc(100vh - 104px - 39px - 247px - (52px * 2));
+		}
+
+		@include xl
+		{
+			// 100% - header - header margin - footer - wrapper margins
+			min-height: calc(100vh - 143px - 52px - 247px - (91px * 2));
+		}
+	}
+	@else
+	{
+		min-height: calc(100vh - 71.5px - 324px);
+
+		@include m
+		{
+			// 100% - header - header margin - footer
+			min-height: calc(100vh - 71.5px - 32.5px - 240.5px);
+		}
+
+		@include l
+		{
+			// 100% - header - header margin - footer
+			min-height: calc(100vh - 104px - 39px - 247px);
+		}
+
+		@include xl
+		{
+			// 100% - header - header margin - footer
+			min-height: calc(100vh - 143px - 52px - 247px);
+		}
+	}
+
+
+}
+
