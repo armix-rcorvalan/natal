@@ -1,0 +1,63 @@
+.checkout
+{
+	margin: 1*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 2*$lh;
+	}
+}
+
+@include om
+{
+	.checkout
+	{
+		&__inner
+		{
+			max-width: 600px;
+		}
+	}
+}
+
+@include m
+{
+	.checkout
+	{
+		margin: 2*$lh 0;
+	}
+}
+
+@include l
+{
+	.checkout
+	{
+		&__inner
+		{
+			grid-column-gap: 2*$lh;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+			grid-template-rows: auto auto auto;
+		}
+
+		&__box
+		{
+			&--step-1
+			{
+				grid-column: 1/2;
+				grid-row: 1/2;
+			}
+
+			&--step-2
+			{
+				grid-column: 1/2;
+				grid-row: 2/3;
+			}
+
+			&--step-3
+			{
+				grid-column: 1/2;
+				grid-row: 3/4;
+			}
+		}
+	}
+}

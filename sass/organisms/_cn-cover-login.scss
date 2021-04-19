@@ -1,0 +1,58 @@
+.cn-cover-login
+{
+	background-image: url('../images/club-cover-login.png');
+	background-position: center bottom;
+	background-size: cover;
+	display: flex;
+	height: 8*$lh;
+	justify-content: center;
+	padding-top: 1*$lh;
+
+	&__logo
+	{
+		display: block;
+		height: 1.5*$lh;
+		width: auto;
+	}
+}
+
+@include m
+{
+	.cn-cover-login
+	{
+		height: 11*$lh;
+
+		&__logo
+		{
+			height: 2.5*$lh;
+		}
+	}
+}
+
+@include l
+{
+	.cn-cover-login
+	{
+		height: 18*$lh;
+		padding-top: 1.75*$lh;
+
+		&__logo
+		{
+			height: 4*$lh;
+		}
+	}
+}
+
+@include xl
+{
+	.cn-cover-login
+	{
+		height: 22*$lh;
+		padding-top: 1.75*$lh;
+
+		&__logo
+		{
+			height: 4*$lh;
+		}
+	}
+}

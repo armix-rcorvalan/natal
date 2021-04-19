@@ -1,11 +1,11 @@
-const fs = require('fs');
-const path = require('path');
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
+const fs          = require('fs');
+const path        = require('path');
+const gulp        = require('gulp');
+const sass        = require('gulp-sass');
+const sourcemaps  = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
-const pleeease = require('gulp-pleeease');
-const ip = require("ip");
+const pleeease    = require('gulp-pleeease');
+const ip          = require("ip");
 
 
 const armix_browsersync = () => 
@@ -38,6 +38,6 @@ const armix_prod = () =>
 }
 
 exports.browsersync = armix_browsersync;
-exports.sass = armix_sass;
-exports.watch = armix_watch;
-exports.prod = armix_prod;
+exports.sass        = armix_sass;
+exports.watch       = armix_watch;
+exports.prod        = armix_prod;

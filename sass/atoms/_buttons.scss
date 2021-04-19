@@ -24,3 +24,50 @@
 	line-height: 1.75*$lh;
 	padding: 0 1*$lh;
 }
+
+.button.button--wide
+{
+	padding: 0 3*$lh;
+}
+
+.button.button--filter
+{
+	background: none;
+	border: 1px solid $silver;
+	color: $silver;
+	font-size: 13px;
+	font-weight: 400;
+
+	img
+	{
+		display: inline-block;
+		margin-left: 3px;
+		vertical-align: middle;
+	}
+
+	&:hover
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+}
+
+.button.button--white
+{
+	background: none;
+	border: 1px solid $sapphire;
+	color: $sapphire;
+	font-weight: 400;
+
+	&:hover
+	{
+		background: $alabaster;
+	}
+}
+
+.button.button--white-blue
+{
+	background: $sapphire;
+	border: 1px solid $white;
+	color: $white;
+	font-weight: 400;
+}

@@ -1,0 +1,67 @@
+.simple-cover
+{
+	background-position: center;
+	background-size: auto 100%;
+	height: 6*$lh;
+
+	&--cart
+	{
+		background-image: url('../images/simple-cover-cart-s.png');
+	}
+
+	&--location
+	{
+		background-image: url('../images/simple-cover-location-s.png');
+	}
+
+	&__inner
+	{
+		align-items: flex-end;
+		display: flex;
+		height: inherit;
+		padding: 1*$lh 0;
+	}
+
+	&__title
+	{
+		color: $sapphire;
+		font-size: 24px;
+	}
+}
+
+@include l
+{
+	.simple-cover
+	{
+		height: 7*$lh;
+
+		&--cart
+		{
+			background-image: url('../images/simple-cover-cart-l.png');
+		}
+
+		&--location
+		{
+			background-image: url('../images/simple-cover-location-l.png');
+		}
+
+		&__inner
+		{
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__title
+		{
+			color: $white;
+			font-size: 34px;
+			font-weight: 300;
+			line-height: 1.5*$lh;
+
+			br
+			{
+				display: none;
+			}
+		}
+	}
+}

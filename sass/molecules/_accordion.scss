@@ -1,0 +1,60 @@
+.accordion
+{
+	&__item
+	{
+		border-bottom: 1px solid $alto;
+
+		&:first-child
+		{
+			border-top: 1px solid $alto;
+		}
+
+		&--active
+		{
+			.accordion__title
+			{
+				color: $gray;
+				font-weight: 700;
+
+				&::after
+				{
+					transform: rotate(0);
+				}
+			}
+		}
+	}
+
+	&__content
+	{
+		display: none;
+		font-size: 12px;
+		margin-bottom: .5*$lh;
+	}
+
+	&__title
+	{
+		display: block;
+		font-size: 14px;
+		padding: .5*$lh 0;
+		position: relative;
+
+		&::after
+		{
+			background-image: url('../images/accordion-arrow.png');
+			content: '';
+			display: block;
+			height: 8px;
+			position: absolute;
+			right: .5*$lh;
+			top: calc(50% - 4px);
+			transform: rotate(180deg);
+			transition: transform .3s;
+			width: 14px;
+		}
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+}

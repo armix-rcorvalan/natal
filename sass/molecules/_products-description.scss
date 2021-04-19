@@ -1,0 +1,137 @@
+.products-description
+{
+	&__title
+	{
+		color: $dusty-gray;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: .75*$lh;
+		margin-bottom: .5*$lh;
+	}
+
+	&__prices
+	{
+		align-items: center;
+		border-bottom: 1px solid $alto;
+		display: flex;
+		margin-bottom: .5*$lh;
+		padding-bottom: .5*$lh;
+	}
+
+	&__price
+	{
+		color: $sapphire;
+		font-size: 24px;
+		font-weight: 700;
+
+		&--line-through
+		{
+			color: $dusty-gray;
+			font-size: 18px;
+			font-weight: 400;
+			text-decoration: line-through;
+		}
+	}
+
+	&__price + &__price
+	{
+		margin-left: 8px;
+	}
+
+	&__list
+	{
+		border-bottom: 1px solid $alto;
+		display: block;
+		margin-bottom: .5*$lh;
+		padding-bottom: .5*$lh;
+	}
+
+	&__item
+	{
+		align-items: center;
+		display: flex;
+		font-size: 10px;
+		line-height: .5*$lh;
+
+		&:not(:last-child)
+		{
+			margin-bottom: .5*$lh;
+		}
+	}
+
+	&__item-icon
+	{
+		height: .75*$lh;
+		margin-right: 8px;
+		width: .75*$lh;
+	}
+
+	&__form
+	{
+		.input-wrapper
+		{
+			margin-bottom: .5*$lh;
+
+			&--submit
+			{
+				margin-bottom: 0;
+				margin-top: 1*$lh;
+				text-align: center;
+			}
+		}
+
+		.input-small
+		{
+			display: block;
+		}
+	}
+}
+
+@include m
+{
+	.products-description
+	{
+		&__prices,
+		&__list
+		{
+			margin-bottom: .75*$lh;
+			padding-bottom: .75*$lh;
+		}
+
+		&__form
+		{
+			display: grid;
+			grid-column-gap: 1*$lh;
+			grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+
+			.input-wrapper--submit
+			{
+				grid-column: 1/-1;
+			}
+		}
+	}
+}
+
+@include l
+{
+	.products-description
+	{
+		&__title
+		{
+			font-size: 24px;
+			line-height: 1*$lh;
+			margin-bottom: 1*$lh;
+		}
+
+		&__form
+		{
+			.input-wrapper
+			{
+				&--submit
+				{
+					text-align: left;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.editor
+{
+	font-size: 12px;
+	line-height: .75*$lh;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	ol,
+	iframe
+	{
+		margin-bottom: .75*$lh;
+	}
+
+	h2
+	{
+		color: $sapphire;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	h3
+	{
+		color: $sapphire;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	ol
+	{
+		list-style: decimal;
+		padding-left: 18px;
+	}
+
+	iframe
+	{
+		max-width: 100%;
+	}
+
+	.separator
+	{
+		display: block;
+		height: 1*$lh;
+	}
+}
+
+@include m
+{
+	.editor
+	{
+		font-size: 16px;
+		line-height: 1*$lh;
+
+		h2
+		{
+			font-size: 24px;
+		}
+	}
+}

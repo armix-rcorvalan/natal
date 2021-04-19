@@ -1,0 +1,269 @@
+.inputs
+{
+	background: $white;
+	margin: 2*$lh 0;
+
+	&__inner
+	{
+		align-items: start;
+		display: grid;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: 1*$lh;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	}
+}
+
+.input-text
+{
+	@include remove-highlight;
+
+	background-color: $white;
+	border: 1px solid $silver;
+	border-radius: 6px;
+	color: $emperor;
+	display: block;
+	font-size: 12px;
+	height: 1.25*$lh;
+	padding: 1px 15px 0;
+
+	@include placeholder
+	{
+		color: $silver;
+		opacity: 1;
+	}
+
+	&:focus
+	{
+		box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+	}
+
+	&:disabled
+	{
+		opacity: .5;
+	}
+
+	&.input-text--large
+	{
+		height: 1.5*$lh;
+	}
+
+	&--row
+	{
+		display: block;
+		width: 100%;
+	}
+}
+
+.input-textarea
+{
+	@extend .input-text;
+
+	height: 5*$lh;
+	padding: 15px;
+
+	&.input-text--large
+	{
+		height: 5*$lh;
+	}
+
+	&--row
+	{
+		display: block;
+		width: 100%;
+	}
+}
+
+.input-checkbox
+{
+	align-items: center;
+	display: flex;
+	padding: .125*$lh;
+
+	input
+	{
+		display: none;
+	}
+
+	label
+	{
+		align-items: center;
+		color: $gray;
+		cursor: pointer;
+		display: flex;
+		font-size: 12px;
+		line-height: .75*$lh;
+
+		&::before
+		{
+			background: none;
+			border: 1px solid $silver;
+			color: $white;
+			content: '';
+			display: block;
+			font-size: 11px;
+			font-weight: 700;
+			height: 11px;
+			line-height: 12px;
+			margin-right: 8px;
+			text-align: center;
+			width: 11px;
+		}
+	}
+
+	input:checked + label
+	{
+		color: $candlelight;
+		font-weight: 700;
+
+		&::before
+		{
+			background: $candlelight;
+			border: 1px solid $candlelight;
+			content: '\2713';
+		}
+	}
+
+	input:disabled + label
+	{
+		opacity: .5;
+	}
+}
+
+
+.input-checkbox.input-checkbox--circle
+{
+	label
+	{
+		&::before
+		{
+			border-radius: 50%;
+			height: 8px;
+			width: 8px;
+		}
+	}
+
+	input:checked + label
+	{
+		&::before
+		{
+			content: '';
+		}
+	}
+}
+
+.input-radio
+{
+	@extend .input-checkbox;
+	@extend .input-checkbox--circle;
+
+	&--dark
+	{
+		input:checked + label
+		{
+			color: $ebony-clay;
+			font-weight: 300;
+		}
+	}
+}
+
+.input-range
+{
+	margin: .5*$lh 0;
+	width: 180px;
+
+	&__ranges
+	{
+		display: flex;
+		justify-content: space-around;
+		margin-top: .5*$lh;
+	}
+
+	&__range-text
+	{
+		color: $silver;
+		font-size: 10px;
+		text-align: center;
+	}
+
+	&__range-value
+	{
+		background-color: $gallery;
+		border-radius: 100px;
+		color: $sapphire;
+		display: inline-block;
+		font-size: 14px;
+		height: 23px;
+		padding: 0 14px;
+	}
+}
+
+.tag
+{
+	background: $mercury;
+	background-image: url('../images/tag-remove.png');
+	background-position: 11px 50%;
+	background-repeat: no-repeat;
+	border-radius: 100px;
+	color: $silver;
+	display: inline-block;
+	font-size: 12px;
+	height: 23px;
+	line-height: 23px;
+	padding: 0 15px 0 28px;
+
+	&:hover
+	{
+		opacity: .8;
+	}
+}
+
+.input-label
+{
+	color: $gray;
+	display: inline-block;
+	font-size: 9px;
+	line-height: 1*$lh;
+
+	&--row
+	{
+		display: block;
+	}
+}
+
+.input-small
+{
+	color: $gray;
+	font-size: 10px;
+
+	a
+	{
+		text-decoration: underline;
+	}
+}
+
+.input-box
+{
+	display: grid;
+	grid-row-gap: .5*$lh;
+
+	h2
+	{
+		color: $sapphire;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	h3
+	{
+		color: $sapphire;
+		font-size: 12px;
+		font-weight: 700;
+	}
+}
+
+.input-group
+{
+	display: grid;
+	grid-row-gap: .25*$lh;
+}

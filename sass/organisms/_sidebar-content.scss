@@ -1,0 +1,50 @@
+.sidebar-content
+{
+	margin: 1*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 1*$lh;
+	}
+
+	&--order-inverse
+	{
+		.sidebar-content__sidebar
+		{
+			order: 2;
+		}
+
+		.sidebar-content__content
+		{
+			order: 1;
+		}
+	}
+}
+
+@include l
+{
+	.sidebar-content
+	{
+		margin: 2*$lh 0;
+
+		&__inner
+		{
+			grid-column-gap: 2*$lh;
+			grid-template-columns: minmax(0, 2fr) minmax(0, 5fr);
+		}
+
+		&--order-inverse
+		{
+			.sidebar-content__sidebar
+			{
+				order: 1;
+			}
+
+			.sidebar-content__content
+			{
+				order: 2;
+			}
+		}
+	}
+}

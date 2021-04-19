@@ -16,7 +16,9 @@
 		align-items: center;
 		color: $royal-blue;
 		display: flex;
+		flex-wrap: nowrap;
 		font-size: 12px;
+		white-space: nowrap;
 
 		&:hover
 		{

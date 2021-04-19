@@ -1,0 +1,75 @@
+.products-filters
+{
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 2*$lh;
+	}
+
+	&__group
+	{
+		position: relative;
+
+		&:not(:last-child)::after
+		{
+			background: $silver;
+			bottom: -1*$lh;
+			content: '';
+			display: block;
+			height: 1px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+	}
+
+	&__group-title
+	{
+		color: $sapphire;
+		display: block;
+		font-size: 12px;
+		margin-bottom: .25*$lh;
+	}
+}
+
+.accordion-checkbox
+{
+	&__item
+	{
+		position: relative;
+
+		&--active
+		{
+			.accordion-checkbox__toggle
+			{
+				transform: rotate(0);
+			}
+		}
+	}
+
+	&__toggle
+	{
+		background-image: url('../images/accordion-arrow.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: .75*$lh;
+		opacity: .7;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: rotate(180deg);
+		transition: transform .3s;
+		width: .75*$lh;
+	}
+
+	&__content
+	{
+		border-bottom: 1px solid $mercury;
+		display: none;
+		margin-bottom: .5*$lh;
+		margin-left: .5*$lh;
+		padding-bottom: .25*$lh;
+		padding-top: .25*$lh;
+	}
+}

@@ -1,0 +1,40 @@
+.pagination
+{
+	text-align: center;
+
+	&__list
+	{
+		display: inline-flex;
+		justify-content: center;
+	}
+
+	&__item
+	{
+		background: $alto;
+		border-radius: 4px;
+		font-size: 13px;
+		height: 1.25*$lh;
+		line-height: 1.25*$lh;
+		margin: 0 4px;
+		width: 1.25*$lh;
+
+		&:not(&--dots):not(&--active):hover
+		{
+			opacity: .8;
+		}
+
+		&--active
+		{
+			background: $sapphire;
+			color: $white;
+			font-weight: 500;
+		}
+	}
+
+	&__link
+	{
+		display: block;
+		height: inherit;
+		width: inherit;
+	}
+}

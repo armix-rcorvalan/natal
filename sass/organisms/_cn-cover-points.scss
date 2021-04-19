@@ -1,0 +1,59 @@
+.cn-cover-points
+{
+	background-image: url('../images/club-cover-s.png');
+	background-position: center;
+	background-size: auto 100%;
+	color: $white;
+	height: 6*$lh;
+	text-align: center;
+
+	&__inner
+	{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: inherit;
+		justify-content: center;
+	}
+
+	&__title
+	{
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: .5*$lh;
+	}
+
+	&__points-number
+	{
+		font-size: 34px;
+		font-weight: 700;
+		line-height: 1.5*$lh;
+	}
+
+	&__points-text
+	{
+		font-size: 14px;
+		line-height: .75*$lh;
+	}
+}
+
+@include l
+{
+	.cn-cover-points
+	{
+		background-image: url('../images/club-cover-l.png');
+		height: 7*$lh;
+
+		&__title
+		{
+			font-size: 34px;
+			font-weight: 300;
+			margin-bottom: 1*$lh;
+		}
+
+		&__points
+		{
+			color: $sapphire;
+		}
+	}
+}

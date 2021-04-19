@@ -4,7 +4,7 @@
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
-	transition: .1s box-shadow;
+	//transition: .1s box-shadow;
 
 	&:hover
 	{
@@ -132,6 +132,17 @@
 			{
 				margin-left: 16px;
 			}
+		}
+	}
+}
+
+@include xl
+{
+	.products-item
+	{
+		&__image
+		{
+			height: 7*$lh;
 		}
 	}
 }

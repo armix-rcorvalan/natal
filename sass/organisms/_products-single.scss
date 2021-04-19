@@ -1,0 +1,44 @@
+.products-single
+{
+	margin: 1*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+	}
+}
+
+@include om
+{
+	.products-single
+	{
+		margin: 2*$lh 0;
+
+		&__inner
+		{
+			grid-row-gap: .75*$lh;
+			max-width: 600px;
+		}
+	}
+}
+
+@include l
+{
+	.products-single
+	{
+		margin: 2*$lh 0 3*$lh;
+
+		&__inner
+		{
+			grid-column-gap: 2*$lh;
+			grid-row-gap: 1.5*$lh;
+			grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
+		}
+
+		&__breadcrumbs
+		{
+			grid-column: span 2;
+		}
+	}
+}

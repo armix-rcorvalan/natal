@@ -1,0 +1,99 @@
+.cn-box-login
+{
+	margin: 1*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 1*$lh;
+		grid-template-rows: 12*$lh 12*$lh;
+	}
+
+	&__box
+	{
+		align-items: center;
+		background: $sapphire;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 1*$lh;
+
+		&--blue
+		{
+			color: $white;
+		}
+
+		&--yellow
+		{
+			background: $candlelight;
+			color: $sapphire;
+		}
+	}
+
+	&__title
+	{
+		font-size: 20px;
+		font-weight: 300;
+		margin-bottom: 1*$lh;
+		text-align: center;
+	}
+
+	&__form
+	{
+		display: block;
+		width: 100%;
+
+		.input-wrapper
+		{
+			margin-bottom: .5*$lh;
+		}
+	}
+
+	&__button-wrapper
+	{
+		text-align: center;
+	}
+}
+
+@include m
+{
+	.cn-box-login
+	{
+		margin: 2*$lh 0;
+
+		&__inner
+		{
+			grid-column-gap: 1*$lh;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+			grid-template-rows: auto;
+		}
+
+		&__box
+		{
+			border-radius: 24px;
+
+			&:nth-child(1)
+			{
+				order: 2;
+			}
+
+			&:nth-child(2)
+			{
+				order: 1;
+			}
+		}
+	}
+}
+
+@include l
+{
+	.cn-box-login
+	{
+		&__box
+		{
+			border-radius: 55px;
+			padding: 2*$lh 3*$lh;
+		}
+	}
+}

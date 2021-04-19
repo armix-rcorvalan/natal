@@ -1,0 +1,30 @@
+.sidebar-menu
+{
+	&__item
+	{
+		border-bottom: 1px solid $alto;
+
+		&:first-child
+		{
+			border-top: 1px solid $alto;
+		}
+
+		&--active
+		{
+			color: $sapphire;
+			font-weight: 700;
+		}
+	}
+
+	&__link
+	{
+		display: block;
+		font-size: 14px;
+		padding: .5*$lh 0;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+}

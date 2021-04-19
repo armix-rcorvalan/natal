@@ -1,0 +1,40 @@
+.cn-menu
+{
+
+	&__list
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item
+	{
+		&--active
+		{
+			.cn-menu__link
+			{
+				background: $candlelight;
+				color: $sapphire;
+			}
+		}
+	}
+
+	&__link
+	{
+		background: $mercury;
+		border-radius: 100px;
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		height: 1.5*$lh;
+		line-height: 1.5*$lh;
+		margin: 3px 5px 3px 0;
+		padding: 0 15px;
+		white-space: nowrap;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+}

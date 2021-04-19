@@ -1,0 +1,17 @@
+.cn-editor
+{
+	margin: 1*$lh 0;
+
+	&__inner
+	{
+		max-width: 640px;
+	}
+}
+
+@include m
+{
+	.cn-editor
+	{
+		margin: 3*$lh 0;
+	}
+}

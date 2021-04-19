@@ -1,0 +1,45 @@
+.nice-number
+{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+
+	button
+	{
+		color: $gray;
+		cursor: pointer;
+		font-size: 18px;
+		height: 100%;
+		padding: 3px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+
+		&:nth-child(1)
+		{
+			left: calc(50% - 26px);
+		}
+
+		&:nth-child(3)
+		{
+			left: calc(50% + 26px);
+		}
+	}
+
+	input
+	{
+		@extend .input-text;
+
+		-moz-appearance: textfield;
+		display: block;
+		text-align: center;
+		width: 100% !important;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button
+		{
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.cn-filter-bar
+{
+	align-items: center;
+	background: $mercury;
+	border-radius: 4px;
+	display: grid;
+	grid-column-gap: .25*$lh;
+	grid-row-gap: .25*$lh;
+	grid-template-columns: minmax(0, 1fr);
+	justify-content: space-between;
+	padding: .5*$lh;
+
+	&__wrapper
+	{
+		align-items: center;
+		display: flex;
+
+		.input-button-search
+		{
+			cursor: pointer;
+			display: block;
+			margin-left: 8px;
+
+			&:hover
+			{
+				opacity: .8;
+			}
+		}
+	}
+}
+
+@include m
+{
+	.cn-filter-bar
+	{
+		grid-template-columns: minmax(0, 1fr)  minmax(0, 1fr);
+
+		&__left
+		{
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		&__right
+		{
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}

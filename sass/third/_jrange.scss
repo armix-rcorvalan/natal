@@ -1,0 +1,100 @@
+.input-range
+{
+	.slider-container
+	{
+
+	}
+
+	.slider-container .back-bar
+	{
+		background: $silver;
+		border-radius: 100px;
+		height: 5px;
+		position: relative;
+	}
+
+	.slider-container .back-bar .selected-bar
+	{
+		background: $candlelight;
+		height: 100%;
+		position: absolute;
+	}
+
+	.slider-container .back-bar .pointer
+	{
+		background: $candlelight;
+		border-radius: 50%;
+		cursor: col-resize;
+		height: 13px;
+		opacity: 1;
+		position: absolute;
+		top: -4px;
+		width: 13px;
+		z-index: 2;
+	}
+
+	.slider-container .back-bar .pointer.last-active
+	{
+		z-index: 3;
+	}
+
+	.slider-container .back-bar .pointer-label
+	{
+		background: white;
+		font-size: 8px;
+		line-height: 1;
+		position: absolute;
+		top: -17px;
+		white-space: nowrap;
+	}
+
+	.slider-container .back-bar .focused
+	{
+		z-index: 10;
+	}
+
+	.slider-container .clickable-dummy
+	{
+		cursor: pointer;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+
+	/*
+
+	.slider-container .scale
+	{
+		position: relative;
+		top: 2px;
+	}
+
+	.slider-container .scale span
+	{
+		border-left: 1px solid #999;
+		font-size: 0;
+		height: 5px;
+		position: absolute;
+	}
+
+	.slider-container .scale ins
+	{
+		color: #999;
+		font-size: 9px;
+		left: 0;
+		line-height: 1;
+		position: absolute;
+		text-decoration: none;
+		top: 5px;
+	}
+
+	.slider-container.slider-readonly .clickable-dummy,
+	.slider-container.slider-readonly .pointer
+	{
+		cursor: auto;
+	}
+
+	*/
+
+}

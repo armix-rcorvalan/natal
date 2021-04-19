@@ -1,0 +1,106 @@
+.cn-products-item
+{
+	background: $white;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+
+	&:hover
+	{
+		box-shadow: 0 8px 10px rgba(0, 0, 0, .14), 0 3px 14px rgba(0, 0, 0, .12), 0 5px 5px rgba(0, 0, 0, .2);
+	}
+
+	&__top
+	{
+		border-bottom: 1px solid $alto;
+		display: block;
+		padding: .25*$lh;
+	}
+
+	&__image
+	{
+		display: block;
+		height: 6*$lh;
+		object-fit: contain;
+		width: 100%;
+	}
+
+	&__middle
+	{
+		display: block;
+		height: 100%;
+		padding: .5*$lh;
+	}
+
+	&__title
+	{
+		color: $gray;
+		display: block;
+		font-size: 13px;
+		line-height: .75*$lh;
+		overflow: hidden;
+	}
+
+	&__bottom
+	{
+		display: block;
+		padding: 0 .5*$lh .5*$lh;
+	}
+
+	&__code
+	{
+		color: $silver;
+		display: block;
+		font-size: 10px;
+	}
+
+	&__points
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__points-number
+	{
+		color: $sapphire;
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	&__points-text
+	{
+		color: $sapphire;
+		font-size: 10px;
+		line-height: .5*$lh;
+	}
+
+	&__button-wrapper
+	{
+		display: block;
+		margin-top: .5*$lh;
+		text-align: center;
+	}
+
+	&__button
+	{
+		width: 100%;
+	}
+}
+
+@include m
+{
+	.cn-products-item
+	{
+		&__top,
+		&__middle,
+		&__bottom
+		{
+			padding: .75*$lh;
+		}
+
+		&__bottom
+		{
+			padding-top: 0;
+		}
+	}
+}

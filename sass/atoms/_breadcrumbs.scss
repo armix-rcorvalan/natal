@@ -1,0 +1,19 @@
+.breadcrumbs
+{
+	color: $silver;
+	font-size: 12px;
+
+	&__separator
+	{
+		display: inline-block;
+		margin: 0 2px;
+	}
+
+	&__link
+	{
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+}

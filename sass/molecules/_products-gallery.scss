@@ -1,0 +1,60 @@
+.products-gallery
+{
+	align-items: center;
+	border-bottom: 1px solid $alto;
+	border-top: 1px solid $alto;
+	display: grid;
+	grid-column-gap: .75*$lh;
+	grid-template-columns: auto minmax(0, 365px) auto;
+	justify-content: center;
+	padding: .5*$lh 0;
+
+	&__arrow-link
+	{
+		display: block;
+		height: .75*$lh;
+		width: auto;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+
+	&__arrow-image
+	{
+		height: inherit;
+		width: inherit;
+	}
+
+	&__image
+	{
+		border-radius: 20px;
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+@include m
+{
+	.products-gallery
+	{
+		grid-column-gap: 1.5*$lh;
+		padding: 1.25*$lh 0;
+
+		&__arrow-link
+		{
+			height: 2*$lh;
+		}
+	}
+}
+
+@include l
+{
+	.products-gallery
+	{
+		border: 0;
+		padding: 0;
+	}
+}
