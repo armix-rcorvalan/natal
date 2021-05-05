@@ -1,0 +1,77 @@
+.recetas
+{
+	margin: 1*$lh 0;
+
+	&__inner,
+	&__col-left,
+	&__col-right,
+	&__box
+	{
+		align-items: start;
+		display: grid;
+		grid-row-gap: 2*$lh;
+	}
+
+	&__box
+	{
+		border-bottom: 1px solid $alto;
+		grid-row-gap: 1*$lh;
+		padding-bottom: .75*$lh;
+	}
+
+	&__step
+	{
+		align-items: center;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: .5*$lh;
+	}
+
+	&__step-left
+	{
+		margin-right: 10px;
+	}
+
+	&__step-icon
+	{
+		display: block;
+		height: auto;
+		width: 20px;
+	}
+
+	&__step-right
+	{
+	}
+}
+
+@include om
+{
+	.recetas
+	{
+		&__inner
+		{
+			max-width: 600px;
+		}
+	}
+}
+
+@include m
+{
+	.recetas
+	{
+		margin: 2*$lh 0;
+	}
+}
+
+@include l
+{
+	.recetas
+	{
+		&__inner
+		{
+			grid-column-gap: 2*$lh;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+			grid-template-rows: auto auto auto;
+		}
+	}
+}

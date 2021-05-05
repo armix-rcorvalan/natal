@@ -52,6 +52,14 @@
 		display: block;
 		width: 100%;
 	}
+
+	@include l
+	{
+		.input-text--grow
+		{
+			height: 1.5*$lh;
+		}
+	}
 }
 
 .input-textarea
@@ -107,6 +115,11 @@
 			margin-right: 8px;
 			text-align: center;
 			width: 11px;
+		}
+
+		a
+		{
+			text-decoration: underline;
 		}
 	}
 
@@ -241,17 +254,58 @@
 	}
 }
 
-.input-box
+.input-upload
+{
+	align-items: center;
+	background-color: $mercury;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	height: 7*$lh;
+	justify-content: center;
+
+	img
+	{
+		display: block;
+		height: 1*$lh;
+		margin-bottom: .25*$lh;
+		width: auto;
+	}
+
+	span
+	{
+		color: $gray;
+		font-size: 10px;
+		line-height: .5*$lh;
+	}
+}
+
+.input-box,
+.box
 {
 	display: grid;
 	grid-row-gap: .5*$lh;
 
 	h2
 	{
+		align-items: center;
 		color: $sapphire;
+		display: inline-flex;
 		font-size: 18px;
 		font-weight: 700;
 		text-transform: uppercase;
+
+		.arrow
+		{
+			display: block;
+			height: 6px;
+			margin-right: 8px;
+
+			&--open
+			{
+				transform: rotate(180deg);
+			}
+		}
 	}
 
 	h3
@@ -260,10 +314,21 @@
 		font-size: 12px;
 		font-weight: 700;
 	}
+
+	p
+	{
+		font-size: 12px;
+		line-height: .75*$lh;
+	}
 }
 
 .input-group
 {
 	display: grid;
 	grid-row-gap: .25*$lh;
+
+	&--center
+	{
+		justify-content: center;
+	}
 }

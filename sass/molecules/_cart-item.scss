@@ -1,0 +1,155 @@
+.cart-item
+{
+	border-bottom: 1px solid $alto;
+	display: grid;
+	grid-column-gap: .5*$lh;
+	grid-row-gap: .25*$lh;
+	grid-template-areas: 'image title title'
+						 'image attr attr'
+						 'image amount prices'
+						 'del none prices';
+	grid-template-columns: 3*$lh 90px auto;
+	padding: .5*$lh 0 .25*$lh;
+
+	&__image-wrapper
+	{
+		align-items: center;
+		background: $white;
+		border-radius: 8px;
+		display: flex;
+		grid-area: image;
+		justify-content: center;
+		padding: .25*$lh;
+	}
+
+	&__image
+	{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	&__title
+	{
+		color: $gray;
+		font-size: 12px;
+		grid-area: title;
+		line-height: .75*$lh;
+	}
+
+	&__attributes
+	{
+		display: flex;
+		grid-area: attr;
+	}
+
+	&__attribute
+	{
+		color: $silver;
+		font-size: 9px;
+		margin-right: 10px;
+	}
+
+	&__amount
+	{
+		grid-area: amount;
+	}
+
+	&__prices
+	{
+		font-size: 9px;
+		grid-area: prices;
+		line-height: .5*$lh;
+		text-align: right;
+	}
+
+	&__price-previous
+	{
+		color: $silver;
+	}
+
+	&__price
+	{
+		color: $gray;
+		white-space: nowrap;
+	}
+
+	&__price-subtotal
+	{
+		color: $dusty-gray;
+		font-size: 14px;
+		margin-top: .5*$lh;
+	}
+
+	&__delete
+	{
+		grid-area: del;
+		justify-self: center;
+	}
+
+	&__delete-icon
+	{
+		display: inline-block;
+		height: 11px;
+		vertical-align: middle;
+		width: auto;
+	}
+
+	&__delete-text
+	{
+		color: $silver;
+		font-size: 7px;
+		vertical-align: middle;
+	}
+}
+
+@include l
+{
+	.cart-item.cart-item--grow
+	{
+		grid-template-areas: 'image title amount prices'
+							 'image attr amount prices'
+							 'del none none none';
+		grid-template-columns: 3*$lh auto 120px 120px;
+
+		.cart-item:first-child
+		{
+			border-top: 1px solid $alto;
+		}
+
+		.cart-item__title
+		{
+			align-self: end;
+			font-size: 13px;
+		}
+
+		.cart-item__amount
+		{
+			align-self: center;
+		}
+
+		.cart-item__prices
+		{
+			align-self: center;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.cart-item__price-subtotal
+		{
+			margin-bottom: .5*$lh;
+			margin-top: 0;
+			order: 1;
+		}
+
+		.cart-item__price-previous
+		{
+			order: 2;
+		}
+
+		.cart-item__price
+		{
+			order: 3;
+		}
+	}
+}

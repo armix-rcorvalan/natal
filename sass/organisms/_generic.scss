@@ -1,0 +1,12 @@
+.generic
+{
+	margin: 1*$lh 0;
+}
+
+@include m
+{
+	.generic
+	{
+		margin: 2*$lh 0;
+	}
+}

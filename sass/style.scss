@@ -51,6 +51,7 @@
 @import 'molecules/cn-menu';
 @import 'molecules/cn-filter-bar';
 @import 'molecules/cn-products-item';
+@import 'molecules/cart-item';
 
 // Organisms
 @import 'organisms/header';
@@ -69,3 +70,6 @@
 @import 'organisms/cn-editor';
 @import 'organisms/cn-cover-points';
 @import 'organisms/cn-products';
+@import 'organisms/recetas';
+@import 'organisms/cart';
+@import 'organisms/generic';

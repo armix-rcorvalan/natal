@@ -1,0 +1,91 @@
+.cart
+{
+	margin: 1*$lh 0;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 1*$lh;
+		max-width: 768px;
+	}
+
+	&__title
+	{
+		align-items: center;
+		color: $sapphire;
+		display: inline-flex;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__total
+	{
+		align-items: center;
+		background: $gallery;
+		display: flex;
+		height: 3*$lh;
+		justify-content: space-between;
+		padding: .5*$lh;
+	}
+
+	&__total-title,
+	&__total-number
+	{
+		color: $sapphire;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.1;
+	}
+
+	&__total-iva
+	{
+		color: $gray;
+		font-size: 8px;
+		line-height: 1.1;
+	}
+
+	&__continue
+	{
+		text-align: center;
+	}
+
+	&__legend
+	{
+		display: flex;
+		justify-content: center;
+		margin-top: .25*$lh;
+	}
+
+	&__legend-text
+	{
+		color: $gray;
+		font-size: 9px;
+		margin-left: 10px;
+
+		a
+		{
+			color: $sapphire;
+			text-decoration: underline;
+		}
+	}
+}
+
+@include m
+{
+	.cart
+	{
+		margin: 2*$lh 0;
+	}
+}
+
+
+@include l
+{
+	.cart
+	{
+		&__inner
+		{
+			//grid-template-columns: 2fr 1fr;
+		}
+	}
+}

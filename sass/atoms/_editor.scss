@@ -16,6 +16,13 @@
 		margin-bottom: .75*$lh;
 	}
 
+	h1
+	{
+		color: $sapphire;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
 	h2
 	{
 		color: $sapphire;
@@ -54,6 +61,12 @@
 	{
 		font-size: 16px;
 		line-height: 1*$lh;
+
+		h1
+		{
+			font-size: 36px;
+			line-height: 1.5*$lh;
+		}
 
 		h2
 		{
